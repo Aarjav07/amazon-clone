@@ -214,4 +214,62 @@ footer {
     border-radius: 5px;
     cursor: pointer;
   }
-  
+/* --------- Responsive Design --------- */
+
+/* Tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar input {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+/* Phones (up to 480px) */
+@media screen and (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .navbar {
+    font-size: 14px;
+  }
+}
+/* Large screens (desktops) */
+@media screen and (min-width: 1200px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .search-bar input {
+    width: 600px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .product-card {
+    padding: 20px;
+    text-align: left;
+  }
+}
