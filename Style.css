@@ -253,23 +253,3 @@ footer {
     font-size: 14px;
   }
 }
-/* Large screens (desktops) */
-@media screen and (min-width: 1200px) {
-  .navbar {
-    padding: 20px;
-  }
-
-  .search-bar input {
-    width: 600px;
-  }
-
-  .product-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-
-  .product-card {
-    padding: 20px;
-    text-align: left;
-  }
-}
