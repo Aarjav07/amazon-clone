@@ -253,3 +253,14 @@ footer {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+}
