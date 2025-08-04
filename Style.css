@@ -214,6 +214,61 @@ footer {
     border-radius: 5px;
     cursor: pointer;
   }
+  /* --------- Deals Section --------- */
+.deals-section {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.deals-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.deal-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.deal-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.deal-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff9900;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 /* --------- Responsive Design --------- */
 
 /* Tablets (up to 768px) */
@@ -262,5 +317,16 @@ footer {
 
   .footer-column {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .deals-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .deals-grid {
+    grid-template-columns: 1fr;
   }
 }
