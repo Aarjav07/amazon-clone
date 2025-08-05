@@ -28,6 +28,8 @@ loginBtn.addEventListener('click', () => {
     modal.style.display = 'none';
   }
 });
+
+// Cart functionality
 let cartCount = 0;
 
 const cartCounter = document.getElementById("cart-count");
