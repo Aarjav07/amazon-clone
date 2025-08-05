@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Amazon Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --------- Cart Page --------- */
+.cart-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+  width: 100px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.item-details h3 {
+  margin: 0 0 5px;
+}
+
+.cart-summary {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.checkout-btn {
+  background-color: #ff9900;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #e68a00;
+}
+
+</style>
+</head>
+<body>
+  
+  <header class="navbar">
+    <h1>🛒 Your Cart</h1>
+    <a href="index.html">← Back to Shopping</a>
+  </header>
+
+  <section class="cart-section">
+    <div class="cart-item">
+      <img src="images/deal1.jpg" alt="Product 1">
+      <div class="item-details">
+        <h3>Wireless Earbuds</h3>
+        <p>Price: ₹1,499</p>
+        <p>Quantity: 1</p>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <img src="images/deal2.jpg" alt="Product 2">
+      <div class="item-details">
+        <h3>Smart Watch</h3>
+        <p>Price: ₹2,999</p>
+        <p>Quantity: 1</p>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <h2>Total: ₹4,498</h2>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </section>
+
+</body>
+</html>
