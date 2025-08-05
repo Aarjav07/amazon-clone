@@ -28,3 +28,15 @@ loginBtn.addEventListener('click', () => {
     modal.style.display = 'none';
   }
 });
+let cartCount = 0;
+
+const cartCounter = document.getElementById("cart-count");
+const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+
+addToCartButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    cartCount++;
+    cartCounter.textContent = cartCount;
+    alert("Item added to cart!");
+  });
+});
