@@ -31,14 +31,30 @@ loginBtn.addEventListener('click', () => {
 
 // Cart functionality
 let cartCount = 0;
-
 const cartCounter = document.getElementById("cart-count");
 const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
 
-addToCartButtons.forEach(button => {
+// Load cart from local storage if available
+let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+// Update cart count on page load
+cartCount = cartItems.length;
+cartCounter.textContent = cartCount;
+
+addToCartButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    const product = {
+      name: button.previousElementSibling.previousElementSibling.textContent,
+      price: button.previousElementSibling.textContent,
+      image: button.parentElement.querySelector("img").src
+    };
+
+    cartItems.push(product);
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+
     cartCount++;
     cartCounter.textContent = cartCount;
-    alert("Item added to cart!");
+
+    alert(`${product.name} added to cart!`);
   });
 });
