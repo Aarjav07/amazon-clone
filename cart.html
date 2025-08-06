@@ -62,30 +62,6 @@
     <a href="index.html">← Back to Shopping</a>
   </header>
 
-  <section class="cart-section">
-    <div class="cart-item">
-      <img src="box6.jpg" alt="Product 1">
-      <div class="item-details">
-        <h3>Wireless Earbuds</h3>
-        <p>Price: ₹1,499</p>
-        <p>Quantity: 1</p>
-      </div>
-    </div>
-
-    <div class="cart-item">
-      <img src="box4.jpg" alt="Product 2">
-      <div class="item-details">
-        <h3>Smart Watch</h3>
-        <p>Price: ₹2,999</p>
-        <p>Quantity: 1</p>
-      </div>
-    </div>
-
-    <div class="cart-summary">
-      <h2>Total: ₹4,498</h2>
-      <button class="checkout-btn">Proceed to Checkout</button>
-    </div>
-  </section>
 <script>
   const cartSection = document.querySelector(".cart-section");
   const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
