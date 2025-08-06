@@ -74,7 +74,7 @@ body {
 }
 /*hero section*/
 .hero-section{
-    background-image: url(Hero-image.jpg.jpg);
+    background-image: url(image/Hero-image.jpg.jpg);
     height: 380px;
     background-size: cover;
     display: flex;
@@ -161,7 +161,7 @@ footer {
     align-items: center;
 }
 .logoE {
-    background-image: url(fake.jpg);
+    background-image: url(image/fake.jpg);
     background-size: cover;
     height: 50px;
     width: 160px;
