@@ -67,3 +67,17 @@ document.querySelectorAll(".category-card").forEach(card => {
     });
   });
 });
+// Search functionality
+document.getElementById('searchInput').addEventListener('keyup', function () {
+    let filter = this.value.toLowerCase();
+    let products = document.querySelectorAll('.deal-card');
+
+    products.forEach(function (product) {
+        let title = product.querySelector('h2, h3, p').textContent.toLowerCase();
+        if (title.includes(filter)) {
+            product.style.display = '';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+});
