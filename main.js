@@ -54,3 +54,16 @@ addToCartButtons.forEach((button) => {
     alert(`${product.name} added to cart!`);
   });
 });
+
+document.querySelectorAll(".category-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const category = card.getAttribute("data-category");
+    document.querySelectorAll(".deal-card").forEach(product => {
+      if (category === "all" || product.getAttribute("data-category") === category) {
+        product.style.display = "";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  });
+});
