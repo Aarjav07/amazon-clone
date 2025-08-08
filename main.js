@@ -29,23 +29,20 @@ loginBtn.addEventListener('click', () => {
   }
 });
 
-// Cart functionality
 let cartCount = 0;
 const cartCounter = document.getElementById("cart-count");
 const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
 
 // Load cart from local storage if available
 let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-
-// Update cart count on page load
 cartCount = cartItems.length;
 cartCounter.textContent = cartCount;
 
 addToCartButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const product = {
-      name: button.previousElementSibling.previousElementSibling.textContent,
-      price: button.previousElementSibling.textContent,
+      name: button.parentElement.querySelector("h3").textContent,
+      price: button.parentElement.querySelector(".price").textContent,
       image: button.parentElement.querySelector("img").src
     };
 
@@ -54,7 +51,6 @@ addToCartButtons.forEach((button) => {
 
     cartCount++;
     cartCounter.textContent = cartCount;
-
     alert(`${product.name} added to cart!`);
   });
 });
