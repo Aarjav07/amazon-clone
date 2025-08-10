@@ -68,16 +68,24 @@ document.querySelectorAll(".category-card").forEach(card => {
   });
 });
 // Search functionality
-document.getElementById('searchInput').addEventListener('keyup', function () {
-    let filter = this.value.toLowerCase();
-    let products = document.querySelectorAll('.deal-card');
+function filterProducts() {
+    let filter = document.getElementById('searchInput').value.toLowerCase();
+
+    // Select all product cards (both deals and categories)
+    let products = document.querySelectorAll('.deal-card, .box');
 
     products.forEach(function (product) {
-        let title = product.querySelector('h2, h3, p').textContent.toLowerCase();
-        if (title.includes(filter)) {
+        let text = product.textContent.toLowerCase(); // All text inside product
+        if (text.includes(filter)) {
             product.style.display = '';
         } else {
             product.style.display = 'none';
         }
     });
-});
+}
+
+// Trigger search on typing
+document.getElementById('searchInput').addEventListener('keyup', filterProducts);
+
+// Trigger search on search icon click
+document.querySelector('.Search-icon').addEventListener('click', filterProducts);
