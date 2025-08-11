@@ -1,36 +1,33 @@
-# 🛒 Amazon Clone Website (In Progress)
+# 🛒 Amazon Clone – Fake Amazon Pro
 
-This is a front-end clone of the Amazon India homepage built using HTML, CSS, and JavaScript. This project aims to practice core web development skills and learn how to structure real-world websites.
-
----
-
-## 🌐 Live Demo
-👉 [Visit Website](https://aarjav07.github.io/amazon-clone/)
+A fully responsive Amazon-style e-commerce clone built using **HTML**, **CSS**, and **JavaScript**.  
+Features include product categories, deals of the day, add-to-cart functionality, search filter, and a responsive UI similar to the real Amazon.
 
 ---
 
-## 🚀 Features
-
-- ✅ Amazon-style header with logo and search bar
-- ✅ Navigation bar and categories
-- ✅ Product grid layout
-- ✅ Responsive layout (work in progress)
-- 🚧 Cart page, login page (coming soon)
-
----
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-- Git & GitHub for version control
-- GitHub Pages for deployment
+## 🚀 Live Demo
+🔗 [View Project Here](https://aarjav07.github.io/amazon-clone/)
 
 ---
 
 ## 📸 Screenshots
-Coming soon...
+
+### Homepage
+![Homepage Screenshot](images/homepage.png)
+
+### Cart Page
+![Cart Screenshot](images/cartpage.png)
+
+---
+
+## ✨ Features
+- **Add to Cart** with LocalStorage persistence  
+- **View Cart Page** with product count  
+- **Shop by Category** section  
+- **Search Bar** with live filtering  
+- **Responsive Design** (mobile & desktop)  
+- **Hover Animations** for buttons and cards  
+- **Hero Banner** for promotions  
 
 ---
 
